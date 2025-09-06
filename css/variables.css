@@ -1,0 +1,208 @@
+:root {
+  /* Couleurs principales (mode clair par défaut) */
+  --color-primary: #2c2c2c;
+  --color-secondary: #666;
+  --color-accent: #FFB6C1;
+  --color-background-beige: #f8f8f8;
+  --color-background: linear-gradient(135deg, #FFB6C1, #E6E6FA);
+  --color-white: #ffffff;
+  --color-transparent-white: rgba(255, 255, 255, 0.1);
+  --color-transparent-white-hover: rgba(255, 255, 255, 0.95);
+  --color-border: rgba(255, 255, 255, 0.2);
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-shadow-light: rgba(0, 0, 0, 0.05);
+
+  /* ========================================= */
+  /* DARK MODE VARIABLES */
+  /* ========================================= */
+  
+  /* Couleurs sombres principales */
+  --color-primary-dark: #e5e5e5;
+  --color-secondary-dark: #b3b3b3;
+  --color-accent-dark: #ff8fa3;
+  --color-background-beige-dark: #1a1a1a;
+  --color-background-dark: linear-gradient(135deg, #2d1b2e, #1e1e2e);
+  --color-white-dark: #0f0f0f;
+  --color-transparent-white-dark: rgba(255, 255, 255, 0.05);
+  --color-transparent-white-hover-dark: rgba(255, 255, 255, 0.1);
+  --color-border-dark: rgba(255, 255, 255, 0.1);
+  --color-shadow-dark: rgba(0, 0, 0, 0.3);
+  --color-shadow-light-dark: rgba(0, 0, 0, 0.2);
+
+  /* Couleurs de texte sombre */
+  --color-text-primary-dark: #f0f0f0;
+  --color-text-secondary-dark: #c0c0c0;
+  --color-text-muted-dark: #888888;
+
+  /* Couleurs de surface sombre */
+  --color-surface-dark: #262626;
+  --color-surface-elevated-dark: #333333;
+  --color-surface-card-dark: #2a2a2a;
+
+  /* Couleurs d'interaction sombre */
+  --color-hover-dark: #404040;
+  --color-active-dark: #4a4a4a;
+  --color-focus-dark: #ff8fa3;
+
+  /* Couleurs de bordure sombre */
+  --color-border-subtle-dark: #404040;
+  --color-border-strong-dark: #606060;
+
+  /* Couleurs d'ombre sombre */
+  --box-shadow-dark: 0 10px 27px rgba(0, 0, 0, 0.4);
+  --box-shadow-card-dark: 0 4px 15px rgba(0, 0, 0, 0.3);
+  --box-shadow-elevated-dark: 0 8px 30px rgba(0, 0, 0, 0.5);
+
+  /* ========================================= */
+  /* VARIABLES EXISTANTES (inchangées) */
+  /* ========================================= */
+
+  /* Typographie */
+  --font-family-primary: 'Oswald', sans-serif;
+  --font-family-secondary: 'Inter', sans-serif;
+  
+  /* Tailles de police */
+  --font-size-logo: 1.8rem;
+  --font-size-nav: 1rem;
+  --font-size-hero-title: 4rem;
+  --font-size-hero-subtitle: 2.5rem;
+  --font-size-logo-mobile: 1.4rem;
+  --font-size-hero-title-mobile: 2.5rem;
+  --font-size-hero-subtitle-mobile: 1.8rem;
+  --font-size-about-title: 3rem;
+  --font-size-about-title-mobile: 2rem;
+  --font-size-about-text: 1.1rem;
+
+  /* Poids de police */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Espacements */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 2.5rem;
+  --spacing-xxl: 4rem;
+
+  /* Conteneur */
+  --container-max-width: 1200px;
+  --container-padding: 20px;
+
+  /* Header */
+  --header-height: 80px;
+  --header-padding: 1rem 20px;
+
+  /* Navigation */
+  --nav-gap: 2rem;
+  --nav-gap-mobile: 1rem;
+
+  /* Bordures et rayons */
+  --border-radius: 8px;
+  --border-width: 1px;
+  --underline-height: 2px;
+
+  /* Hamburger */
+  --hamburger-width: 25px;
+  --hamburger-height: 3px;
+  --hamburger-gap: 3px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Z-index */
+  --z-header: 1000;
+  --z-overlay: 999;
+
+  /* Effets */
+  --backdrop-blur: blur(10px);
+  --text-shadow: 2px 2px 4px var(--color-shadow);
+  --box-shadow: 0 10px 27px var(--color-shadow-light);
+}
+
+/* ========================================= */
+/* DARK MODE THEME */
+/* ========================================= */
+
+[data-theme="dark"] {
+  /* Remplacer les couleurs principales par les versions sombres */
+  --color-primary: var(--color-primary-dark);
+  --color-secondary: var(--color-secondary-dark);
+  --color-accent: var(--color-accent-dark);
+  --color-background-beige: var(--color-background-beige-dark);
+  --color-background: var(--color-background-dark);
+  --color-white: var(--color-white-dark);
+  --color-transparent-white: var(--color-transparent-white-dark);
+  --color-transparent-white-hover: var(--color-transparent-white-hover-dark);
+  --color-border: var(--color-border-dark);
+  --color-shadow: var(--color-shadow-dark);
+  --color-shadow-light: var(--color-shadow-light-dark);
+  
+  /* Effets sombres */
+  --box-shadow: var(--box-shadow-dark);
+}
+
+/* ========================================= */
+/* DARK MODE SPECIFIC STYLES */
+/* ========================================= */
+
+[data-theme="dark"] body {
+  background: var(--color-background-beige-dark);
+  color: var(--color-text-primary-dark);
+}
+
+[data-theme="dark"] .header {
+  background: linear-gradient(135deg, #2d1b2e 0%, #1e1e2e 100%);
+}
+
+[data-theme="dark"] .header::after {
+  background: linear-gradient(to bottom, transparent 0%, rgba(26, 26, 26, 0.3) 40%, rgba(26, 26, 26, 0.8) 80%, #1a1a1a 100%);
+}
+
+[data-theme="dark"] .footer {
+  background: linear-gradient(135deg, #2d1b2e 0%, #1e1e2e 100%);
+}
+
+[data-theme="dark"] .footer::before {
+  background: linear-gradient(to top, transparent 0%, rgba(26, 26, 26, 0.3) 40%, rgba(26, 26, 26, 0.8) 80%, #1a1a1a 100%);
+}
+
+[data-theme="dark"] .header__nav-menu::before {
+  background: rgba(45, 27, 46, 0.95);
+}
+
+[data-theme="dark"] .cv__viewer {
+  background: var(--color-surface-dark);
+  border-color: var(--color-border-strong-dark);
+}
+
+[data-theme="dark"] .cv__download-button {
+  background: var(--color-accent-dark);
+}
+
+[data-theme="dark"] .cv__download-button:hover {
+  background: var(--color-secondary-dark);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .skills__software-icon,
+[data-theme="dark"] .about__photo,
+[data-theme="dark"] .skills__photo,
+[data-theme="dark"] .montage__video,
+[data-theme="dark"] .motion__video {
+  box-shadow: var(--box-shadow-card-dark);
+}
+
+/* Ajustements pour les SVG en mode sombre */
+[data-theme="dark"] .about__vector,
+[data-theme="dark"] .skills__vector,
+[data-theme="dark"] .montage__vector,
+[data-theme="dark"] .motion__vector,
+[data-theme="dark"] .cv__vector {
+  opacity: 0.15; /* Réduction de l'opacité en mode sombre */
+  filter: brightness(0.7) contrast(1.2);
+}
