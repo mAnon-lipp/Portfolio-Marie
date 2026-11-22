@@ -1,0 +1,85 @@
+:root {
+  /* Couleurs principales (mode clair par défaut) */
+  --color-primary: #2c2c2c;
+  --color-secondary: #666;
+  --color-accent: #f8c5c2;
+  --color-background-beige: #f3e9dd;
+  --color-background: linear-gradient(135deg, #feb1a8 0%, #f8c5c2 52%, #e6a5a5 100%);
+  --color-white: #ffffff;
+  --color-transparent-white: rgba(255, 255, 255, 0.1);
+  --color-transparent-white-hover: rgba(255, 255, 255, 0.95);
+  --color-border: rgba(255, 255, 255, 0.2);
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-shadow-light: rgba(0, 0, 0, 0.05);
+
+  /* ========================================= */
+  /* VARIABLES EXISTANTES (inchangées) */
+  /* ========================================= */
+
+  /* Typographie */
+  --font-family-primary: 'Oswald', sans-serif;
+  --font-family-secondary: 'Inter', sans-serif;
+  
+  /* Tailles de police */
+  --font-size-logo: 2.2rem;
+  --font-size-nav: 1.15rem;
+  --font-size-nav-mobile: 1.7rem;
+  --font-size-hero-title: 4.8rem;
+  --font-size-hero-subtitle: 2.5rem;
+  --font-size-logo-mobile: 1.75rem;
+  --font-size-hero-title-mobile: 3.2rem;
+  --font-size-hero-subtitle-mobile: 1.8rem;
+  --font-size-about-title: 3rem;
+  --font-size-about-title-mobile: 2rem;
+  --font-size-about-text: 1.1rem;
+
+  /* Poids de police */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Espacements */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 2.5rem;
+  --spacing-xxl: 4rem;
+
+  /* Conteneur */
+  --container-max-width: 1200px;
+  --container-padding: 20px;
+
+  /* Header */
+  --header-height: 80px;
+  --header-padding: 1rem 20px;
+
+  /* Navigation */
+  --nav-gap: 2rem;
+  --nav-gap-mobile: 1rem;
+
+  /* Bordures et rayons */
+  --border-radius: 8px;
+  --border-width: 1px;
+  --underline-height: 2px;
+
+  /* Hamburger */
+  --hamburger-width: 25px;
+  --hamburger-height: 3px;
+  --hamburger-gap: 3px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Z-index */
+  --z-header: 1000;
+  --z-overlay: 999;
+
+  /* Effets */
+  --backdrop-blur: blur(10px);
+  --text-shadow: 2px 2px 4px var(--color-shadow);
+  --box-shadow: 0 10px 27px var(--color-shadow-light);
+}
